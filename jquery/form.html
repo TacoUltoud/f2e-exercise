@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      .template{
+        display: none
+      }
+      tr:hover{
+        background-color: #ddd 
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <table id="main" border=1 style="width:50%">
+        <tr>
+          <th>ID<th>Name<th>
+        <tr class="edit">
+            <td>
+            <td><input name="name" placeholder="name">
+            <td><input type="submit" value="save">
+        </tr>
+        <tr class="template">
+          <td class="id"><td class="name"><td><button type="button">Del</button>
+      </table>
+    </form>
+    <script>
+      let newIdx = 1
+      $("#form").off("submit").on("submit",function(){
+        let newName = $(".edit input[name=name]").val()
+        let $a = $(".template").clone().removeClass().children(".id").text(newIdx++).end().children(".name").text(newName).end()
+        $(".edit").before($a)
+        $(".edit input[name=name]").val("").focus()
+        return false
+      })
+      $("#form").off("click").on("click", "button", function(){
+        let base = $(this).parent().parent().children(".id").text()
+        Array.prototype.map.call($(".id"),x => {
+          if(Number(x.innerText) > base) x.innerText--
+        })
+        $(this).parent().parent().remove()
+        newIdx = $(".id").length
+      })
+    </script>
+  </body>
+</html>
