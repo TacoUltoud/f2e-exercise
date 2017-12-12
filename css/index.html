@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>css practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav id="header">
+      <h2>hide me</h2>
+      <h2>CSS box model</h2>
+      <div id="progress-bar">
+        <div id="scroll-active"></div>
+      </div>
+    </nav>
+    <div class="container-top">
+      <div class="square-rot"></div>
+    </div>
+    <div class="container">
+      <div class="flex-hoc">
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+      </div>
+      <div class="ver7">
+        <div class="flex">display: flex</div>qqq
+        <div class="inline-flex">display: inline-flex</div>qqq
+      </div>
+      <div class="ver6">
+        <div class="redbox-block2"></div>
+        <a class="right">RIGHT</a>
+        <a class="left">LEFT</a>
+      </div>
+      <div class="ver5"><div class="redbox-block"></div></div>
+      <div class="gray2">
+        <ul>
+          <li>
+            <a href="#">Useless Link</a>
+          </li>
+          <li>
+            <a href="#">Dropdown Link</a>
+            <ul class='test'>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="rela">Adversity is a good discipline<br><br>
+        <div class="abs">Adversity is a good discipline</div>
+      </div>
+      <div class="rela2">Adversity is a good discipline</div>
+      <div class="fix">Adversity is a good discipline</div>
+      <div class="ver4">
+        <div class="redbox3"></div>
+        <div class="greenbox3"></div>
+        <div class="bluebox3"></div>
+      </div>
+      <div class="ver2">
+        <div class="redbox"></div>
+        <div class="greenbox"></div>
+        <div class="bluebox"></div>
+      </div>
+      <div class="ver"><h1>Adversity is a good discipline</h1></div>
+      <div class="ver"><div class="redbox"></div></div>
+      <div class="ver2">
+        <div class="redbox"></div>
+        <div class="greenbox2"></div>
+        <div class="bluebox"></div>
+      </div>
+      <div class="ver3">
+        <div class="redbox"></div>
+        <div class="greenbox"></div>
+        <div class="bluebox"></div>
+      </div>
+      <div>
+        <div class="square">test</div>
+        <div class="square hover">test</div>
+        <div class="square active">test</div>
+        <div class="template">test</div><br>
+        <button class="clone">copy square</button>
+      </div>
+      <div class="gray">background color is gray</div>
+      <div class="border">border overwrite</div>
+    </div>
+    <div class="hor">
+      <div class="block-hor">test</div>
+      <p class="inline-hor">center horizontally</p>
+    </div>
+    <table class="timetable">
+      <thead>課程時間表</thead>
+      <tbody>
+        <tr><th>2017<th>Sun<th>Mon<th>Tue<th>Wed<th>Thu<th>Fri<th>Sat
+        <tr><th rowspan=4>Aug<th>13<th>14<th>15<th>16<th>17<th>18<th>19
+        <tr><td><td> 導論 <td> 演算法錄影 <td> 演算法 <td> 演算法錄影 <td> 演算法 <td>
+        <tr><th>20<th>21<th>22<th>23<th>24<th>25<th>26
+        <tr><td><td> Intro. Net <td> Intro. DB <td colspan=2> JS & Web <td> 演算法 <td>
+        <tr><th rowspan=10>Sep<th>27<th>28<th>29<th>30<th>31<th>1<th>2
+        <tr><td><td colspan=4> JS & Web <td> 演算法 <td>
+        <tr><th>3<th>4<th>5<th>6<th>7<th>8<th>9
+        <tr><td><td colspan=2> 演算法 <td colspan=3> JS & Web <td>
+        <tr><th>10<th>11<th>12<th>13<th>14<th>15<th>16
+        <tr><td><td colspan=2> 新訓 <td> Buffer <td> 網路安全 <td> Intro. Cloud <td>
+        <tr><th>17<th>18<th>19<th>20<th>21<th>22<th>23
+        <tr><td><td colspan=2> 數學 <td colspan=3> 專題1 <td>
+        <tr><th>24<th>25<th>26<th>27<th>28<th>29<th>30
+        <tr><td><td>Git<td> Intro SE <td colspan=3> 專題 1 <td> Buffer
+        <tr><th rowspan=8>Oct<th>1<th>2<th>3<th>4<th>5<th>6<th>7
+        <tr><td><td colspan=2> Cloud <td> 中秋節 <td colspan=2> Cloud <td>
+        <tr><th>8<th>9<th>10<th>11<th>12<th>13<th>14
+        <tr><td colspan=3> 國慶連假 <td colspan=3> Cloud <td>
+        <tr><th>15<th>16<th>17<th>18<th>19<th>20<th>21
+        <tr><td><td colspan=5> DevOps <td>
+        <tr><th>22<th>23<th>24<th>25<th>26<th>27<th>28
+        <tr><td><td colspan=3> 網路安全 <td colspan=2> DevOps <td>
+        <tr><th rowspan=8>Nov<th>29<th>30<th>31<th>1<th>2<th>3<th>4
+        <tr><td><td colspan=2> 密碼學應用 <td colspan=3> 架構實務 <td>
+        <tr><th>5<th>6<th>7<th>8<th>9<th>10<th>11
+        <tr><td><td colspan=4> 架構實務 <td> Buffer <td>
+        <tr><th>12<th>13<th>14<th>15<th>16<th>17<th>18
+        <tr><td><td colspan=5> 專題 2 <td>
+        <tr><th>19<th>20<th>21<th>22<th>23<th>24<th>25
+        <tr><td><td colspan=5> Buffer <td>
+      </tbody>
+    </table>
+    <script>
+      $(".clone").off("click").on("click",function(){
+        let $a = $(".template").clone().removeClass().addClass("square")
+        $(".template").before($a)
+      })
+      var totalH = $(document).height() - $(window).height()
+      $(window).off("scroll").on("scroll",function(){
+        // $("#scroll-active").css({width: $(window).scrollTop() * 100 / totalH + "%",display: "block"})
+        if($(window).scrollTop() < 100){
+          $("#header").css({top: -$(window).scrollTop() + "px"})
+        }
+        else{
+          $("#header").css({top: "-100px"})
+        }
+      })
+      $(window).on("scroll",function(){
+        $("#scroll-active").css({width: $(window).scrollTop() * 100 / totalH + "%",display: "block"})
+      })
+    </script>
+  </body>
+</html>

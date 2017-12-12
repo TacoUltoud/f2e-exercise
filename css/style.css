@@ -1,0 +1,421 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  /* border-bottom: 2px #ccc solid; */
+  /* border-width: 5px; */
+  /* border-style: dashed; */
+  /* border-color: blue; */
+  /* margin-bottom: 15px; */
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* overflow: hidden; */
+  z-index: 9999;
+  height: 200px;
+  line-height: 100px;
+}
+
+.right,.left{
+  background-color: #4caf50;
+  font-family: Verdana,sans-serif;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.right:hover,.left:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+nav h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container-top{
+  position: relative;
+  height: 200px;
+  margin-top: 205px;
+  background-color: #ccc;
+}
+
+.gray{
+  background-color: #fff;
+  color: blue
+}
+
+div.gray{
+  background-color: #ccc;
+  color: green
+}
+
+.border{
+  border: 1px solid red;
+  border-top: 2px dotted black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.square,.template{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid blue
+}
+
+.template{
+  display: none
+}
+
+.hover:hover{
+  background-color: red
+}
+
+.active:active{
+  background-color: black;
+  color: #fff
+}
+
+.ver{
+  height: 200px;
+  border:2px solid blue;
+  text-align: center;
+  line-height: 200px
+}
+
+.ver2,.ver3{
+  height: 200px;
+  border:2px solid blue;
+  text-align: center;
+}
+
+.ver4{
+  height: 200px;
+  border:2px solid blue;
+}
+
+.ver5{
+  height: 200px;
+}
+
+.ver6{
+  position: relative;
+  height: 200px;
+  border:2px solid blue;
+}
+
+.redbox-block{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+.redbox-block2{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+.ver3::before{
+  content: "";
+  width: 0;
+  height:100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ver h1{
+  margin: 0;
+  padding: 0;
+}
+
+.redbox{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  vertical-align: middle;
+}
+
+.redbox3{
+  position: relative;
+  top: calc(50% - 25px);
+  margin-left: calc(50% - 75px);
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  float: left;
+}
+
+.greenbox{
+  display: inline-block;
+  width: 50px;
+  height: 80px;
+  background-color: green;
+  vertical-align: middle;
+}
+
+.greenbox2{
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  background-color: green;
+  vertical-align: middle;
+}
+
+.greenbox3{
+  position: relative;
+  top: calc(50% - 40px);
+  width: 50px;
+  height: 80px;
+  background-color: green;
+  float: left;
+}
+
+.bluebox{
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  background-color: blue;
+  vertical-align: middle;
+}
+
+.bluebox3{
+  position: relative;
+  top: calc(50% - 30px);
+  width: 50px;
+  height: 60px;
+  background-color: blue;
+  float: left;
+}
+
+.rela{
+  position: relative;
+  border: 2px solid blue;
+  background-color: #aaa;
+  height: 200px;
+}
+
+.rela2{
+  position: relative;
+  border: 2px solid blue;
+  background-color: #aaa;
+  top: -5px;
+  left: 20px;
+  width: 200px;
+}
+
+.fix{
+  border: 2px solid blue;
+  background-color: #aaa;
+  position: fixed;
+  padding: 10px;
+  margin: 10px;
+}
+
+.abs{
+  border: 2px solid blue;
+  position: absolute;
+  top: calc(50%)
+}
+
+div.gray2{
+  background-color: #0000ff;
+  height: 50px;
+}
+
+.gray2 a{
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+  color: white;
+}
+
+.gray2 ul{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.gray2 ul li ul{
+  position: absolute;
+  width: 150px;
+  display: none
+}
+
+.gray2 ul li{
+  display: inline-block;
+}
+
+.gray2 ul li ul li{
+  background-color: #ccc;
+  display: block;
+}
+
+.gray2 ul li:hover{
+  background-color: #ccc;
+}
+
+.gray2 ul li:hover ul{
+  display: block;
+  z-index: 9999;
+}
+
+.gray2 ul li ul li:hover {
+  background: #666;
+}
+
+.hor *{
+  margin: 0;
+  padding: 0;
+}
+
+.block-hor{
+  margin: 0 auto;
+  border: 1px solid blue;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.inline-hor{
+  text-align: center;
+}
+
+.square-rot:before{
+  content: "";
+  position: absolute;
+  background-color: #ff0000;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  transform: rotate(0deg);
+  z-index: 2;
+  animation-name: square;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite; 
+}
+
+.square-rot:after{
+  content: "";
+  position: absolute;
+  top: calc(50% + 50px);
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 3px;
+  background:#eaeaea;
+  border-radius: 100%;
+  z-index: 1;
+  animation-name: shadow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes square{
+  0%{
+    top: calc(50% - 40px);
+    transform: rotate(0deg);
+  }
+  20%,80%{
+    border-radius: 2px;
+  }
+  50%{
+    top: calc(50% + 5px);
+    border-bottom-right-radius: 25px;
+    transform: rotate(45deg);
+  }
+  100%{
+    top: calc(50% - 40px);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes shadow{
+  0%,100%{
+  }
+  50%{
+    left: calc(50% - 28px);
+    width: 56px;
+    height: 6px;
+  }
+}
+
+table,th,td{
+  border: 1px solid black;
+}
+
+.ver7{
+  height: 200px;
+  border: 2px solid blue;
+}
+
+.flex{
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background-color: red;
+}
+
+.inline-flex{
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+}
+
+#progress-bar{
+  background-color: #333;
+  height: 5px;
+}
+
+#progress-bar div{
+  background-color: #ff0000;
+  height: 5px;
+  display: none;
+}
+
+.flex-hoc{
+  height: 200px;
+  border: 2px solid blue;
+  flex-direction:row;
+  display: flex;
+}
+
+.flex1{
+  background-color: red;
+  height: 50px;
+  width: 50px;
+}
+
+.flex2{
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+}
+
+.flex3{
+  background-color: green;
+  height: 50px;
+  width: 50px;
+}
